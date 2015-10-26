@@ -170,3 +170,6 @@ endif()
 if(BUILD_docs)
   find_package(Doxygen)
 endif()
+
+# ---[ Unwind
+list(APPEND Caffe_LINKER_LIBS libunwind.so.8)
